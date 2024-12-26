@@ -14,10 +14,13 @@ namespace LoginForm
     {
         private string username;
         //private int userID;
-        public ListEmails(string username)
+        public ListEmails(string usr)
         {
-            this.username = username;
+            username = usr;
+            InitializeComponent();
             lblName.Text = username;
+
+            LoadSampleEmails();
         }
 
         public ListEmails()
@@ -90,6 +93,21 @@ namespace LoginForm
                 item.Tag = email;
                 listEmail.Items.Add(item);
             }
+        }
+
+        private void btnCompose_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblName_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

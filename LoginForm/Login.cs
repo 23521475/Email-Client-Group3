@@ -155,6 +155,8 @@ namespace LoginForm
                     int bytes = stream.Read(responseData, 0, responseData.Length);
                     string responseMessage = Encoding.UTF8.GetString(responseData, 0, bytes);
 
+
+                    //string usr = txtUsername.Text;
                     if (responseMessage == "Success")
                     {
                         ListEmails dashboard = new ListEmails(username); // Truyền username
@@ -182,6 +184,11 @@ namespace LoginForm
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
         {
 
         }

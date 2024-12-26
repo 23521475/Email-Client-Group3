@@ -30,7 +30,6 @@ namespace LoginForm
         private void InitializeComponent()
         {
             this.btnCompose = new System.Windows.Forms.Button();
-            this.lblName = new System.Windows.Forms.Label();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.linklblLogout = new System.Windows.Forms.LinkLabel();
             this.btnClose = new System.Windows.Forms.Button();
@@ -38,42 +37,31 @@ namespace LoginForm
             this.From = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Subject = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCompose
             // 
             this.btnCompose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnCompose.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompose.Location = new System.Drawing.Point(62, 114);
-            this.btnCompose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCompose.Location = new System.Drawing.Point(83, 140);
+            this.btnCompose.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnCompose.Name = "btnCompose";
-            this.btnCompose.Size = new System.Drawing.Size(174, 66);
+            this.btnCompose.Size = new System.Drawing.Size(232, 81);
             this.btnCompose.TabIndex = 22;
             this.btnCompose.Text = "Compose";
             this.btnCompose.UseVisualStyleBackColor = false;
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.Color.Teal;
-            this.lblName.Location = new System.Drawing.Point(654, 23);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(32, 46);
-            this.lblName.TabIndex = 20;
-            this.lblName.Text = " ";
+            this.btnCompose.Click += new System.EventHandler(this.btnCompose_Click);
             // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.Teal;
-            this.lblWelcome.Location = new System.Drawing.Point(226, 19);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblWelcome.Location = new System.Drawing.Point(301, 23);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(258, 46);
+            this.lblWelcome.Size = new System.Drawing.Size(282, 52);
             this.lblWelcome.TabIndex = 21;
             this.lblWelcome.Text = "WELCOME! ";
             // 
@@ -83,10 +71,10 @@ namespace LoginForm
             this.linklblLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linklblLogout.ForeColor = System.Drawing.Color.Teal;
             this.linklblLogout.LinkColor = System.Drawing.Color.Teal;
-            this.linklblLogout.Location = new System.Drawing.Point(23, 23);
-            this.linklblLogout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linklblLogout.Location = new System.Drawing.Point(31, 28);
+            this.linklblLogout.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.linklblLogout.Name = "linklblLogout";
-            this.linklblLogout.Size = new System.Drawing.Size(87, 29);
+            this.linklblLogout.Size = new System.Drawing.Size(97, 31);
             this.linklblLogout.TabIndex = 19;
             this.linklblLogout.TabStop = true;
             this.linklblLogout.Text = "Logout";
@@ -99,10 +87,10 @@ namespace LoginForm
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.29091F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Teal;
-            this.btnClose.Location = new System.Drawing.Point(1026, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Location = new System.Drawing.Point(1368, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 69);
+            this.btnClose.Size = new System.Drawing.Size(100, 85);
             this.btnClose.TabIndex = 18;
             this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -118,10 +106,10 @@ namespace LoginForm
             this.listEmail.FullRowSelect = true;
             this.listEmail.GridLines = true;
             this.listEmail.HideSelection = false;
-            this.listEmail.Location = new System.Drawing.Point(62, 218);
-            this.listEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.listEmail.Location = new System.Drawing.Point(83, 268);
+            this.listEmail.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.listEmail.Name = "listEmail";
-            this.listEmail.Size = new System.Drawing.Size(974, 670);
+            this.listEmail.Size = new System.Drawing.Size(1297, 824);
             this.listEmail.TabIndex = 23;
             this.listEmail.UseCompatibleStateImageBehavior = false;
             this.listEmail.View = System.Windows.Forms.View.Details;
@@ -144,18 +132,29 @@ namespace LoginForm
             this.Date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Date.Width = 170;
             // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(825, 69);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(44, 16);
+            this.lblName.TabIndex = 24;
+            this.lblName.Text = "label1";
+            this.lblName.Click += new System.EventHandler(this.lblName_Click_1);
+            // 
             // ListEmails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 1150);
-            this.Controls.Add(this.btnCompose);
+            this.ClientSize = new System.Drawing.Size(1467, 1102);
             this.Controls.Add(this.lblName);
+            this.Controls.Add(this.btnCompose);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.linklblLogout);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.listEmail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ListEmails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListEmails";
@@ -167,7 +166,6 @@ namespace LoginForm
         #endregion
 
         private System.Windows.Forms.Button btnCompose;
-        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.LinkLabel linklblLogout;
         private System.Windows.Forms.Button btnClose;
@@ -175,5 +173,6 @@ namespace LoginForm
         private System.Windows.Forms.ColumnHeader From;
         private System.Windows.Forms.ColumnHeader Subject;
         private System.Windows.Forms.ColumnHeader Date;
+        private System.Windows.Forms.Label lblName;
     }
 }
